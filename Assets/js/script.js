@@ -37,17 +37,28 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   }
 
+  // script.js
+// script.js
+const hamburger = document.getElementById("hamburger");
+const navLinkss = document.getElementById("nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinkss.classList.toggle("active");
+  hamburger.classList.toggle("active");
+});
+
+
   // Mobile menu toggle
-  const menuToggle = document.createElement('button');
-  menuToggle.textContent = '☰';
-  menuToggle.className = 'menu-toggle';
-  const nav = document.querySelector('nav');
-  if (nav) {
-      nav.appendChild(menuToggle);
-      menuToggle.addEventListener('click', () => {
-          nav.classList.toggle('menu-open');
-      });
-  }
+//   const menuToggle = document.createElement('button');
+//   menuToggle.textContent = 'APPLY NOW';
+//   menuToggle.className = 'menu-toggle';
+//   const nav = document.querySelector('nav');
+//   if (nav) {
+//       nav.appendChild(menuToggle);
+//       menuToggle.addEventListener('click', () => {
+//           nav.classList.toggle('menu-open');
+//       });
+//   }
 
   // News & Events hover effect
   const newsItems = document.querySelectorAll('.news-item');
